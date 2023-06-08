@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Nav() {
     return(
-        <header className='border-b border-white-300 py-2'>
+        <header className='border-b border-gray-300 py-2'>
             <div className='flex items-center justify-between xl:max-w-7xl xl:mx-auto max-w-full px-[8%]'>
                 <img src='/logo.png' width={70} height={50}></img>
 
