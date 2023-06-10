@@ -1,10 +1,14 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-    const response = await fetch('https://api.airtable.com/v0/appBDIWPFLg0qOQIl/movies', {
+    const response = await fetch('https://api.airtable.com/v0/appDWQ8sTIykKJ7qz/Episodes', {
         headers: {
             Authorization: `Bearer ${process.env.AIRTABLE_API_TOKEN}`,
         },
+
+        next: {
+            revalidate: 10,
+        }
         
     });
     const data = await response.json();
