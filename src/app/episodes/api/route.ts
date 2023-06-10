@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-    const response = await fetch('https://api.airtable.com/v0/appDWQ8sTIykKJ7qz/Episodes', {
+    const response = await fetch('https://api.airtable.com/v0/appDWQ8sTIykKJ7qz/episodes', {
         headers: {
             Authorization: `Bearer ${process.env.AIRTABLE_API_TOKEN}`,
         },

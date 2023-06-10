@@ -20,6 +20,9 @@ function Nav() {
                         <li className='px-5 py-2 hover:text-pink-700'>
                             <Link href="/episodes">Episodes</Link>
                         </li>
+                        <li className='px-5 py-2 hover:text-pink-700'>
+                            <Link href="/comments">Comments</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
