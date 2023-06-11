@@ -7,7 +7,7 @@ export async function GET() {
         },
 
         next: {
-            revalidate: 10,
+            revalidate: 0,
         }
         
     });

@@ -4,7 +4,7 @@ type Props = {
 
 const Header = (props: Props) => {
     return (
-        <h1 className="text-2xl font-semibold">{props.children}</h1>
+        <h1 className="text-black text-5xl font-semibold p-10">{props.children}</h1>
     );
 }
 

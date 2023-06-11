@@ -60,26 +60,43 @@ function Comments() {
     }
 
     return (
-        <main className="mt-6">
+        <main className="bg-zinc-200 flex min-h-screen flex-col items-center text-black">
             <Header>Comments</Header>
             {/* {isError && <p>Error!</p>} */}
             {isError ? <p>Error!</p> : null}
             {isLoading && <p>Loading...</p>}
-            <div>
-                {comments && comments.map((elem) => {
-                    return (
-                        <div key={elem.id}>{elem.fields.content} ({elem.fields.status}, {formatDate(elem.createdTime)})</div>
-                    )
-                })}
+            <div className='grid grid-cols-3 items-center w-9/12 text-center shadow-xl p-10'>
+                <div>
+                    {comments && comments.map((elem) => {
+                        return (
+                            <div key={elem.id}>{elem.fields.content}</div>
+                        )
+                    })}
+                </div>
+                <div>
+                    {comments && comments.map((elem) => {
+                        return (
+                            <div key={elem.id}>{elem.fields.status}</div>
+                        )
+                    })}
+                </div>
+                <div>
+                    {comments && comments.map((elem) => {
+                        return (
+                            <div key={elem.id}>{formatDate(elem.createdTime)}</div>
+                        )
+                    })}
+                </div>
             </div>
-            <div>
-            <form onSubmit={handleSubmit}>
+            <div className='mt-5 items-center text-center p-3 w-full'>
+                <form onSubmit={handleSubmit}>
                     <div>
-                        <label htmlFor="comment_body"></label>
-                        <textarea id="comment_body" ref={commentRef} style={{ color: 'black '}} />
+                        <label htmlFor="comment_body" className="block mb-2 text-sm font-medium text-gray-700">Your comment:</label>
+                        <textarea id="comment_body" ref={commentRef} rows={4} placeholder='Write your comment here...'
+                            className='text-sm w-6/12 text-gray-900 bg-gray-50 rounded-lg border border-gray-700'/>
                     </div>
                     <div>
-                        <input className='bg-blue-500' type="submit" value="Send" />
+                        <input className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2' type="submit" value="Send" />
                     </div>
                 </form>
             </div>

@@ -8,20 +8,20 @@ function Nav() {
 
                 <nav className="flex items-center w-auto">
                     <ul className='text-base text-white-600 flex justify-between'>
-                        <li className='px-5 py-2 hover:text-pink-700'>
+                        <li className='px-5 py-2 hover:text-pink-400'>
                             <Link href="/">Home</Link>
                         </li>
-                        <li className='px-5 py-2 hover:text-pink-700'>
+                        <li className='px-5 py-2 hover:text-pink-400'>
                             <Link href="/about">About</Link>
                         </li>
-                        <li className='px-5 py-2 hover:text-pink-700'>
-                            <Link href="/contact">Contact</Link>
-                        </li>
-                        <li className='px-5 py-2 hover:text-pink-700'>
+                        <li className='px-5 py-2 hover:text-pink-400'>
                             <Link href="/episodes">Episodes</Link>
                         </li>
-                        <li className='px-5 py-2 hover:text-pink-700'>
+                        <li className='px-5 py-2 hover:text-pink-400'>
                             <Link href="/comments">Comments</Link>
+                        </li>
+                        <li className='px-5 py-2 hover:text-pink-400'>
+                            <Link href="/contact">Contact</Link>
                         </li>
                     </ul>
                 </nav>
