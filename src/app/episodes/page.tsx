@@ -3,6 +3,14 @@
 import { useState, useEffect } from 'react';
 import { Header } from '../components/header';
 
+interface Episode {
+    id: string;
+    fields: {
+        title: string;
+        season: string;
+    }
+}
+
 function Episodes() {
     const [isLoading, setIsLoading] = useState(true);
     const [isError, setIsError] = useState(false);
