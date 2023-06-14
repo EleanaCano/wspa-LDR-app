@@ -4,7 +4,7 @@ function Nav() {
     return(
         <header className='border-b border-gray-300 py-2'>
             <div className='flex items-center justify-between xl:max-w-7xl xl:mx-auto max-w-full px-[8%]'>
-                <img src='/logo.png' width={70} height={50}></img>
+                <img src='/logo.png' width={70} height={50} alt='logo'></img>
 
                 <nav className="flex items-center w-auto">
                     <ul className='text-base text-white-600 flex justify-between'>

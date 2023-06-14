@@ -10,7 +10,7 @@ export default function About() {
                 This collection of animated short stories spans several genres, including science fiction, fantasy, horror and comedy. 
                 World-class animation creators bring captivating stories to life in the form of a unique and visceral viewing experience. 
                 The animated anthology series includes tales that explore alternate histories, life for robots in a post-apocalyptic city and a plot for world domination by super-intelligent yogurt. 
-                Among the show's executive producers is Oscar-nominated director David Fincher.
+                Among the shows executive producers is Oscar-nominated director David Fincher.
             </p>
 
             <div className="grid md:grid-cols-3 gap-1 text-center mt-10 px-24">
